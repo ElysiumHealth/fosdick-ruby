@@ -6,6 +6,7 @@ module Fosdick
   class NotFoundError < ApiError; end
   class ThrottleError < ApiError; end
   class InvalidError < ApiError; end
+  class DuplicateOrderError < ApiError; end
   class FailureError < ApiError; end
   class UnspecifiedError < ApiError; end
 end
