@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: >
-        False|1234||Invalid|Duplicate ExternalId: 1234
+        False|1234||Invalid|Duplicate ExternalID: 123
     http_version:
   recorded_at: Wed, 04 May 2016 17:29:05 GMT
 recorded_with: VCR 3.0.1

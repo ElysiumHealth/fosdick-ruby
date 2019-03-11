@@ -199,8 +199,8 @@ module Fosdick
       case errors[0]
       when "Invalid"
         last_error = errors.last
-        if last_error.include?('Duplicate ExternalId')
-          raise DuplicateError, last_error
+        if last_error.include?('Duplicate ExternalID')
+          raise DuplicateOrderError, last_error
         end
 
         raise InvalidError, last_error

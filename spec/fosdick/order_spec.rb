@@ -109,9 +109,9 @@ describe Fosdick::Order do
     end
 
     context "invalid error is dupicate" do
-      it "raises a DuplicateError", vcr: { record: :none, cassette_name: "orders/create#duplicate" } do
+      it "raises a DuplicateOrderError", vcr: { record: :none, cassette_name: "orders/create#duplicate" } do
         @attributes[:external_id] = 1234
-        expect { Fosdick::Order.new(@attributes).create }.to raise_exception(Fosdick::DuplicateError)
+        expect { Fosdick::Order.new(@attributes).create }.to raise_exception(Fosdick::DuplicateOrderError)
       end
     end
   end
